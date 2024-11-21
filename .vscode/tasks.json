@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "npm install",
+			"type": "shell",
+			"icon": { "color": "terminal.ansiCyan", "id": "cloud-download" },
+			"command": "npm install",
+			"detail": "install dependencies from package.json",
+			"runOptions": {
+				"runOn": "folderOpen"
+			},
+			"problemMatcher": []
+		}
+	]
+}

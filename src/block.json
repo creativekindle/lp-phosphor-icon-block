@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lp-block/phosphor-icon",
+  "version": "1.0.12",
+  "title": "Phosphor Icon",
+  "category": "widgets",
+  "keywords": [
+    "icon",    
+    "design"
+  ],
+  "icon": "plus",
+  "description": "Add icons using the Phosphor icon library.",
+  "usesContext": [
+    "create-block/iconSizes"
+  ],
+  "supports": {
+    "html": true,  
+    "align": false,
+    "alignWide": false,    
+    "spacing": {
+      "margin": true,
+      "padding": true      
+    },    
+    "color": {
+      "text": true,
+      "background": true
+    },    
+    "__experimentalBorder": {
+      "width": true,
+      "color": true,
+      "style": true,
+      "radius": true
+    }
+  },
+  "attributes": {    
+    "iconWeight": {
+      "type": "string",
+      "default": ""
+    },
+    "iconSize": {
+      "type": "number",
+      "default": 36
+    },
+    "iconName": {
+      "type": "string",
+      "default": ""
+    },
+    "iconRotate": {
+      "type": "number",
+      "default": 0
+    },
+    "scaleX": {
+      "type": "number",
+      "default": 1
+    },
+    "scaleY": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "textdomain": "lp-phosphor-icon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": [
+    "phosphor-icons"
+  ],
+  "render": "file:./render.php"
+}
